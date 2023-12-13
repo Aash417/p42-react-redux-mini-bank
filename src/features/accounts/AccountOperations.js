@@ -10,7 +10,7 @@ function AccountOperations() {
 	const [currency, setCurrency] = useState('USD');
 
 	const dispatch = useDispatch();
-	const { loan, balance, isLoading } = useSelector((store) => store.account);
+	const { loan, isLoading } = useSelector((store) => store.account);
 
 	function handleDeposit() {
 		if (!depositAmount) return;
